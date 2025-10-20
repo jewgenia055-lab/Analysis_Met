@@ -231,3 +231,4 @@ nbserver-*.open.html
 profile_default/
 ipython_config.py
 
+".devcontainer/" 
