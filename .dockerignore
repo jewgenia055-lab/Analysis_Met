@@ -56,11 +56,8 @@ docker-compose.yml
 # Streamlit
 .streamlit/
 
-# Data files 
-data/
-datasets/
-models/
-*.csv
+
+
 *.parquet
 *.h5
 *.hdf5
