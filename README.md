@@ -3,6 +3,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-1.26+-013243?logo=numpy&logoColor=white)](https://numpy.org)
 [![SciPy](https://img.shields.io/badge/SciPy-1.13+-8CAAE6?logo=scipy&logoColor=white)](https://scipy.org)
 [![Plotly](https://img.shields.io/badge/Plotly-5.24+-3F4F75?logo=plotly&logoColor=white)](https://plotly.com)
+[![Docker](https://img.shields.io/badge/Docker-28.5+-2496ED?logo=docker&logoColor=white)](https://docker.com)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.50+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
 
 
@@ -31,8 +32,10 @@
 ***Файлы проекта***
 | Файл | Назначение |
 |------------|------------|
+| `.dockerignore` | Игнорируемые файлы Docker |
 | `.gitignore` | Игнорируемые файлы |
 | `app.py` | Streamlit приложение |
+| `Dockerfile` | Файл Docker |
 | `requirements.txt` | Зависимости |
 | `README.md` | Этот файл |
 
@@ -80,9 +83,11 @@
 
 ## Библитотеки и инструменты разработки
 
-**Инструменты разработки**
+**Инструменты**
+- VSCode
 - Jupyter Notebook
 - Python 3.12.3
+- Docker 28.5.1
 
 **Библиотеки**
 - Numpy 1.26.4
@@ -92,3 +97,25 @@
 
 **Визуализация**
 - Streamlit 1.50.0
+
+## Запуск с помощью Docker
+
+**Предварительные требования**
+- Установленный Docker
+
+**Запуск**
+
+#клонирование репозитория
+git clone https://github.com/jewgenia055-lab/Analysis_Met.git 
+
+#переход в директорию проекта
+cd Analysis_Met
+
+#сборка Docker образа
+docker build -t analys-met . 
+
+#запуск контейнера
+docker run -p 8501:8501 analys-met 
+
+#ссылка открытия в браузере
+http://localhost:8501
