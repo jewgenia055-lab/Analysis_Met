@@ -105,7 +105,7 @@
 
 **Запуск**
 
-`
+```
 #клонирование репозитория
 git clone https://github.com/jewgenia055-lab/Analysis_Met.git 
 
@@ -120,4 +120,5 @@ docker run -p 8501:8501 analys-met
 
 #ссылка открытия в браузере
 http://localhost:8501
-`
+
+```
